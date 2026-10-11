@@ -156,15 +156,18 @@ export default function App() {
       <header style={s.header}>
         <div style={s.headerTop}>
           <div style={s.brandGroup}>
-            <div style={s.logoWrapper}>
-              <img src="/hla-logo.png" alt="Holistic Legacy Accounting" style={s.logoImg} />
-            </div>
+            <img 
+              src="/hla-logo.png" 
+              alt="Holistic Legacy Accounting" 
+              style={s.logoImg} 
+            />
+            <div style={s.brandDivider} />
             <div>
               <div style={s.brandRow}>
-                <span style={s.brandMain}>HOLISTIC</span>
                 <span style={s.brandBadge}>HLA UAE</span>
+                <span style={s.brandPortalText}>Asset & Inventory Portal</span>
               </div>
-              <div style={s.brandSubtitle}>Company Asset & Inventory Management Portal</div>
+              <div style={s.brandSubtitle}>Holistic Legacy Accounting • IT Assets Management</div>
             </div>
           </div>
 
@@ -483,13 +486,13 @@ const styles: Record<string, CSSProperties> = {
   page:         { minHeight: "100vh", background: "#f8fafc", fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif" },
   header:       { background: "linear-gradient(180deg, #0d2238 0%, #112d4a 100%)", borderTop: "3px solid #c59b27", borderBottom: "1px solid rgba(197, 155, 39, 0.3)", padding: "18px 36px 0 36px", display: "flex", flexDirection: "column", gap: "18px" },
   headerTop:    { display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "16px" },
-  brandGroup:   { display: "flex", alignItems: "center", gap: "16px" },
-  logoWrapper:  { background: "#ffffff", padding: "6px 12px", borderRadius: "8px", boxShadow: "0 2px 8px rgba(0,0,0,0.25)", display: "flex", alignItems: "center", justifyContent: "center" },
-  logoImg:      { height: "40px", width: "auto", objectFit: "contain", display: "block" },
-  brandRow:     { display: "flex", alignItems: "center", gap: "8px" },
-  brandMain:    { color: "#ffffff", fontSize: "19px", fontWeight: 800, letterSpacing: "1px" },
-  brandBadge:   { background: "linear-gradient(135deg, #c59b27 0%, #dfb547 100%)", color: "#0d2238", fontSize: "11px", fontWeight: 800, padding: "2px 8px", borderRadius: "4px", letterSpacing: "0.5px" },
-  brandSubtitle:{ color: "#94a3b8", fontSize: "12px", marginTop: "2px", letterSpacing: "0.2px" },
+  brandGroup:      { display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" },
+  logoImg:         { height: "46px", width: "auto", objectFit: "contain", display: "block", filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.3))" },
+  brandDivider:    { width: "1px", height: "36px", background: "rgba(197, 155, 39, 0.4)", margin: "0 2px" },
+  brandRow:        { display: "flex", alignItems: "center", gap: "10px" },
+  brandBadge:      { background: "linear-gradient(135deg, #c59b27 0%, #dfb547 100%)", color: "#0d2238", fontSize: "11px", fontWeight: 800, padding: "2px 8px", borderRadius: "4px", letterSpacing: "0.5px" },
+  brandPortalText: { color: "#ffffff", fontSize: "16px", fontWeight: 700, letterSpacing: "0.3px" },
+  brandSubtitle:   { color: "#94a3b8", fontSize: "12px", marginTop: "2px", letterSpacing: "0.2px" },
   headerRight:  { display: "flex", alignItems: "center", gap: "12px" },
   portalBadge:  { background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "20px", padding: "6px 14px", color: "#e2e8f0", fontSize: "12px", fontWeight: 500, display: "flex", alignItems: "center", gap: "8px" },
   websiteLink:  { background: "rgba(197, 155, 39, 0.15)", border: "1px solid #c59b27", color: "#facc15", borderRadius: "6px", padding: "6px 14px", fontSize: "12px", fontWeight: 700, textDecoration: "none", transition: "all 0.2s" },
